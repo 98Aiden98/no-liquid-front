@@ -1,0 +1,36 @@
+@use "../../styles/_vars.scss" as *;
+@use "../../styles/_mixins.scss" as *;
+
+.search {
+  width: 100%;
+  padding: 16px 250px;
+  .searchBar {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    border: 2px solid #eeeeee;
+    border-radius: 8px;
+    gap: 10px;
+    cursor: text;
+    .searchInput {
+      height: 100%;
+      width: 100%;
+      flex: 1;
+      outline: none;
+      overflow: auto;
+      color: $text-color;
+      border: none;
+      font-family: Arial;
+      font-weight: 400;
+      font-size: 16px;
+      padding: 14px;
+      @include media($breakpoint) {
+        overflow: visible;
+        height: auto;
+      }
+      &::placeholder {
+        color: #9ca3af;
+      }
+    }
+  }
+}

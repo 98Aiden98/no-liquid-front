@@ -1,0 +1,17 @@
+@use "../../styles/_vars.scss" as *;
+@use "../../styles/_mixins.scss" as *;
+
+.contactCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 16px 250px;
+  font-family: 'Triomphe';
+  font-weight: 700;
+  font-style: bold;
+  font-size: 32px;
+  color: $text-color;
+  margin: 30px 0 15px 0;
+}

@@ -1,0 +1,10 @@
+@use "../../styles/_vars.scss" as *;
+@use "../../styles/_mixins.scss" as *;
+
+.productList {
+  width: 100%;
+  padding: 16px 250px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
